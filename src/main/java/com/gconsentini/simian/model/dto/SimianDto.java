@@ -15,7 +15,7 @@ public class SimianDto {
 
     private String[] dna;
 
-    public String getDnaSequence(){
+    public String toDnaSequence(){
         return String.join(", ", dna);
     }
 }

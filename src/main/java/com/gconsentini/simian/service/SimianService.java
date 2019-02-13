@@ -6,7 +6,6 @@ import com.gconsentini.simian.model.dto.SimianDto;
 import com.gconsentini.simian.model.dto.StatsDto;
 import com.gconsentini.simian.repository.SimianRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +19,7 @@ public class SimianService {
     public boolean isSimian(SimianDto simianDto){
 
         boolean isSimian;
-        Simian simian = simianRepository.findBySimian(simianDto.getDnaSequence());
+        Simian simian = simianRepository.findBySimian(simianDto.toDnaSequence());
         if (simian != null){
             return simian.isSimian();
         }

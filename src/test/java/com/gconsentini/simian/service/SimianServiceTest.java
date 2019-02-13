@@ -12,13 +12,7 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.RequestBuilder;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.Collections;
 
@@ -44,11 +38,11 @@ public class SimianServiceTest {
 
     @Before
     public void setUp(){
-        Mockito.when(simianRepository.findBySimian(simianDto.getDnaSequence())).thenReturn(null);
-        Mockito.when(simianRepository.findBySimian(humanDto.getDnaSequence())).thenReturn(null);
-        Mockito.when(simianRepository.findBySimian(simianDtoExist.getDnaSequence())).thenReturn(new Simian(1L, new String[0], true));
-        Mockito.when(simianRepository.findBySimian(notValidDto.getDnaSequence())).thenReturn(null);
-        Mockito.when(simianRepository.findBySimian(notValidDto2.getDnaSequence())).thenReturn(null);
+        Mockito.when(simianRepository.findBySimian(simianDto.toDnaSequence())).thenReturn(null);
+        Mockito.when(simianRepository.findBySimian(humanDto.toDnaSequence())).thenReturn(null);
+        Mockito.when(simianRepository.findBySimian(simianDtoExist.toDnaSequence())).thenReturn(new Simian(1L, new String[0], true));
+        Mockito.when(simianRepository.findBySimian(notValidDto.toDnaSequence())).thenReturn(null);
+        Mockito.when(simianRepository.findBySimian(notValidDto2.toDnaSequence())).thenReturn(null);
         Mockito.when(simianRepository.findAll()).thenReturn(Collections.singletonList((new Simian(1L, new String[0], true))));
     }
 
