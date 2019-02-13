@@ -1,0 +1,10 @@
+version '3.7'
+services:
+  simian:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    image: simian-app
+    ports:
+      - 8080:8080
