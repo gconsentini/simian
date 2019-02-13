@@ -19,6 +19,15 @@ public class Simian {
     @Column
     private Boolean simian;
 
+    public Simian(){
+    }
+
+    public Simian(Long id, String[] dnaSequence, Boolean simian){
+        this.id = id;
+        this.setDnaSequence(dnaSequence);
+        this.simian = simian;
+    }
+
     public void setDnaSequence(String[] dnaSequence) {
         this.dnaSequence = String.join(", ", dnaSequence);
     }

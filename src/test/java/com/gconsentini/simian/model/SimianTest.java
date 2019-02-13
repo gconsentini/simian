@@ -19,4 +19,12 @@ public class SimianTest {
         Assert.assertFalse(simian.isSimian());
     }
 
+    @Test
+    public void createNewSimianWithConstructor(){
+        Simian simian = new Simian(1L, new String[0], false);
+        Assert.assertNotNull(simian.getId());
+        Assert.assertEquals("", simian.getDnaSequence());
+        Assert.assertFalse(simian.isSimian());
+    }
+
 }
