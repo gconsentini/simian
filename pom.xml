@@ -8,9 +8,12 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.gconsentini</groupId>
 	<artifactId>simian</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
 	<name>simian</name>
 	<description>Project to detect if a dna is Simian or Human</description>
 
