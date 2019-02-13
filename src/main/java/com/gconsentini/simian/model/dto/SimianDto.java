@@ -13,7 +13,7 @@ public class SimianDto {
         this.dna = dna;
     }
 
-    private String[] dna;
+    private String[] dna = new String[0];
 
     public String toDnaSequence(){
         return String.join(", ", dna);

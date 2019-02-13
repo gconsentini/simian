@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-slim
 VOLUME /tmp
 MAINTAINER gconsentini
-ADD build/*.jar app.jar
+ADD target/*.jar app.jar
 
 ENV JAVA_OPTS=""
 ENV SPRING_PROFILE="prod"
