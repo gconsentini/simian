@@ -12,7 +12,7 @@ public class DnaHelperTest {
     }
 
     @Test
-    public void is_invalid_simian(){
+    public void is_human(){
         String [] validDna = {"CTGAGA", "CTGAGC", "TATTGT", "AGAGTG", "ACCTTA", "TCACTG"};
         String [] invalidDna = {"TTGAGA", "CTGAGC", "TATTGT", "AGAGTG", "ACCTTA", "TCACTG"};
         Assert.assertFalse(DnaHelper.isSimian(validDna));
@@ -21,10 +21,12 @@ public class DnaHelperTest {
 
     @Test
     public void is_invalid_dna(){
-        String [] validDna = {"CTGAGA", "CTGAGC", "TATTGT", "AGAGTG", "ACCTTA", "TCACTG"};
-        String [] invalidDna = {"XXTAGA", "CTGAGC", "TATTGT", "AGAGTG", "ACCTTA", "TCACTG"};
+        String [] zeroDna= {};
+        String [] zeroDnaQuotes= {""};
+        String [] invalidDna = {"XXTAGY", "CTGAGC", "TATTGT", "AGAGTG", "ACCTTA", "TCACTG"};
         String [] lessDna = {"XXTAGA", "CAGC", "TATTGT", "AGAGTG", "ACCTTA", "TCTG"};
-        Assert.assertTrue(DnaHelper.isValidDna(validDna));
+        Assert.assertFalse(DnaHelper.isValidDna(zeroDna));
+        Assert.assertFalse(DnaHelper.isValidDna(zeroDnaQuotes));
         Assert.assertFalse(DnaHelper.isValidDna(invalidDna));
         Assert.assertFalse(DnaHelper.isValidDna(lessDna));
     }

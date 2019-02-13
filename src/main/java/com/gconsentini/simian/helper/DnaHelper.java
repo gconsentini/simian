@@ -16,9 +16,7 @@ public class DnaHelper {
     }
 
     public static boolean isValidDna(String[] dna){
-
-
-        boolean isValid = true;
+        boolean isValid = dna.length > 0;
         for (int i = 0; isValid && i < dna.length; i++){
             if(dna.length != dna[i].length()) isValid = false;
             for(int j = 0; isValid && j < dna[i].length(); j++){

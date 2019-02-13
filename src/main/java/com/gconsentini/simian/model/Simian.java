@@ -2,10 +2,7 @@ package com.gconsentini.simian.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.util.List;
 
 @Data
@@ -13,12 +10,10 @@ import java.util.List;
 public class Simian {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @Transient
-    private List<String> dna;
-
-    @Column(name = "dna_sequence")
+    @Column(columnDefinition = "TEXT", name = "dna_sequence")
     private String dnaSequence;
 
     @Column
