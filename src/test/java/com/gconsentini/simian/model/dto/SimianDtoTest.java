@@ -17,8 +17,7 @@ public class SimianDtoTest {
 
     @Test
     public void testGetDnaSequence(){
-        SimianDto simianDto = new SimianDto();
-        simianDto.setDna(new String[]{"DNA", "TES", "TES"});
+        SimianDto simianDto = new SimianDto(new String[]{"DNA", "TES", "TES"});
         Assert.assertNotNull(simianDto);
         Assert.assertEquals("DNA, TES, TES", simianDto.getDnaSequence());
     }

@@ -34,7 +34,6 @@ public class SimianService {
         simian.setSimian(isSimian);
         simianRepository.save(simian);
 
-        System.out.println(isSimian);
         return isSimian;
     }
 

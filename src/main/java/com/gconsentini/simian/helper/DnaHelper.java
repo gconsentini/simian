@@ -2,7 +2,10 @@ package com.gconsentini.simian.helper;
 
 import java.util.HashSet;
 
-public class DnaHelper {
+public final class DnaHelper {
+
+    private DnaHelper(){}
+
     private static final HashSet<Character> dnaBase = new HashSet<>();
     static {
         dnaBase.add('a');
