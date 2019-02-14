@@ -4,7 +4,7 @@
 
 [![codecov](https://codecov.io/gh/gconsentini/simian/branch/master/graph/badge.svg?token=rHjjgFRv0k)](https://codecov.io/gh/gconsentini/simian)
 
-## Api rodando no ECS com orquestração de containers
+## Api rodando em um docker container orquestrado no ECS.
 http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/swagger-ui.html
 
 **`POST -> http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/simian`**
