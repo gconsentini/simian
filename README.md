@@ -27,7 +27,7 @@ Api para verificar se um DNA é Simio ou Humano.
 - TravisCI
 - Codecov
 
-## O que é necesário para rodar a API
+## O que é necessário para rodar a API
 
 - [Docker](https://www.docker.com/)
 - [Docker-compose](https://docs.docker.com/compose/)
