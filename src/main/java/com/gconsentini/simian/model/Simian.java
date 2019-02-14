@@ -12,7 +12,7 @@ public class Simian {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @Column(columnDefinition = "TEXT", name = "dna_sequence", unique = true)
+    @Column(columnDefinition = "TEXT", name = "dna_sequence")
     private String dnaSequence;
 
     @Column
