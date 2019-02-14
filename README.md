@@ -61,6 +61,8 @@ Para verificar se um dna é simio ou humano enviar uma mensagem json da seguinte
     "dna": ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
 }
 ```
+Caso Simio:
+**RETORNO HTTP 200-OK**
 
 *Humano*
 ```json
@@ -68,6 +70,7 @@ Para verificar se um dna é simio ou humano enviar uma mensagem json da seguinte
     "dna": ["ATGCGA", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"] 
 }
 ```
+Caso Humano: **RETORNO HTTP 403-FORBIDDEN**
 
 **`GET -> /stats`**
 
