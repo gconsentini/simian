@@ -7,9 +7,9 @@
 ## Api rodando no ECS com orquestração de containers
 http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/swagger-ui.html
 
-**`GET -> http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/simian`**
+**`POST -> http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/simian`**
 
-**`POST -> http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/stats`**
+**`GET -> http://ec2-18-231-83-217.sa-east-1.compute.amazonaws.com/stats`**
 
 
 Api para verificar se um DNA é Simio ou Humano.
