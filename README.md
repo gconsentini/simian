@@ -53,7 +53,7 @@ No swagger tem a documentação da api, como rodar e ui para testar a api.
 
 **`POST -> /simian`**
 
-Para verificar se um dna é simio ou humano, enviar uma mensagem json, da seguinte forma:
+Para verificar se um dna é simio ou humano enviar uma mensagem json da seguinte forma:
 
 *Simio*
 ```json
