@@ -1,6 +1,7 @@
 version: '3.3'
 services:
   simian:
+    container_name: 'simian-app'
     build:
       context: ./
       dockerfile: Dockerfile
